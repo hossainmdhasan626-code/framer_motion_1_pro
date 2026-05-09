@@ -99,13 +99,13 @@ const Projects = () => {
         className="grid grid-cols-1 md:grid-cols-3 gap-6"
       >
         {projects.map((items) => (
-          <div key={items?.id}>
-            <Card
-              bg_color={items?.color}
-              title={items?.title}
-              sub_title={items?.tech}
-            />
-          </div>
+          <Card
+            key={items?.id}
+            bg_color={items?.color}
+            title={items?.title}
+            sub_title={items?.tech}
+            id={items?.id}
+          />
         ))}
       </motion.div>
     </section>
